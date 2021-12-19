@@ -46,15 +46,11 @@ importers:
       '@575/common-lib': workspace:^0.0.0
       mitt: ^3.0.0
       react: ^17.0.2
-      react-router-dom: ^6.2.1
-      scheduler: ^0.20.2
       use-context-selector: ^1.3.9
     dependencies:
       '@575/common-lib': link:../common-lib
       mitt: 3.0.0
       react: 17.0.2
-      react-router-dom: 6.2.1_react-dom@17.0.2+react@17.0.2
-      scheduler: 0.20.2
       use-context-selector: 1.3.9_6f8d07b17e194de65f44b8a51b94fb6d
 
   packages/react-native-lib:

@@ -5,6 +5,9 @@
   "keywords": [],
   "author": "frank575",
   "license": "ISC",
+  "scripts": {
+    "clean": "rm -rf node_modules **/*/node_modules"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
