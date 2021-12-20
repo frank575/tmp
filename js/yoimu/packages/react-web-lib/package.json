@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "wcw850710",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@yoimu/react-common-lib": "workspace:^0.0.0",
     "react": "^17.0.2",

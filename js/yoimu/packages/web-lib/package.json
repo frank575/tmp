@@ -5,5 +5,8 @@
   "main": "index.js",
   "keywords": [],
   "author": "wcw850710",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "wcw850710",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@yoimu/common-lib": "workspace:^0.0.0",
     "mitt": "^3.0.0",

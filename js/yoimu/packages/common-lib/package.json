@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "wcw850710",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "moment": "^2.29.1"
   }
