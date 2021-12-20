@@ -11,7 +11,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@yoimu/common-lib": "workspace:^0.0.0",
+    "@yoimu/common-lib": "workspace:^0.0.1",
     "mitt": "^3.0.0",
     "react": "^17.0.2",
     "use-context-selector": "^1.3.9"
