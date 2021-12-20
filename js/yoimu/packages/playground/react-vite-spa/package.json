@@ -16,7 +16,7 @@
     "@ant-design/icons": "^4.7.0",
     "@yoimu/common-lib": "workspace:^0.0.2",
     "@yoimu/react-common-lib": "workspace:^0.0.2",
-    "@yoimu/react-web-lib": "workspace:^0.0.2",
+    "@yoimu/react-web-lib": "workspace:0.0.3",
     "@yoimu/web-lib": "workspace:^0.0.2",
     "antd": "^4.16.6",
     "axios": "^0.21.1",

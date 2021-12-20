@@ -77,7 +77,7 @@ importers:
       '@vitejs/plugin-react': ^1.0.9
       '@yoimu/common-lib': workspace:^0.0.2
       '@yoimu/react-common-lib': workspace:^0.0.2
-      '@yoimu/react-web-lib': workspace:^0.0.2
+      '@yoimu/react-web-lib': workspace:0.0.3
       '@yoimu/web-lib': workspace:^0.0.2
       antd: ^4.16.6
       autoprefixer: ^10.2.6
