@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { useCallback, useEffect } from 'react'
-import { useSafeState } from '@575/react-common-lib'
+import { useSafeState } from '@yoimu/react-common-lib'
 
 export const useAsyncStorageStore = (appName, initialStore) => {
 	const [store, setStore] = useSafeState(null)

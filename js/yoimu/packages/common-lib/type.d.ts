@@ -41,7 +41,7 @@ type DeepValue<
 		: string | number
 	: DeepValue<T, KS>
 
-declare module '@575/common-lib' {
+declare module '@yoimu/common-lib' {
 	export function timeout(): {
 		start: (callback: () => void, delay?: number) => void
 		startSync: (callback: Promise<void>, delay?: number) => void

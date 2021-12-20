@@ -1,4 +1,4 @@
-declare module '@575/react-common-lib' {
+declare module '@yoimu/react-common-lib' {
 	import { Dispatch, SetStateAction } from 'react'
 
 	export function useAsyncStorageStore<T extends Object, K extends keyof T>(

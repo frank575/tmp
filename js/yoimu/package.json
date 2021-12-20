@@ -1,9 +1,9 @@
 {
-  "name": "575-monorepo",
+  "name": "yoimu-monorepo",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "frank575",
+  "author": "wcw850710",
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf node_modules **/*/node_modules"

@@ -1,4 +1,4 @@
-declare module '@575/web-lib' {
+declare module '@yoimu/web-lib' {
 	export function createClassName(obj: { [key: string]: boolean }): string
 
 	export function copyText(value: number | string): string

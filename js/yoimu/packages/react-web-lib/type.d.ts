@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react'
 
-declare module '@575/react-web-lib' {
+declare module '@yoimu/react-web-lib' {
 	export function useLocalStorageState<T>(
 		key: string,
 		initialValue: T,

@@ -21,7 +21,7 @@ type Paths<T, D extends number = 10> = [D] extends [never]
 type ServiceProvider = (prop: { children: ReactElement }) => ReactElement
 type ServiceInject<T> = <V>(getter: (e: T) => V) => V
 
-declare module '@575/react-common-lib' {
+declare module '@yoimu/react-common-lib' {
 	export function createI18n<
 		T extends object,
 		K extends keyof T,

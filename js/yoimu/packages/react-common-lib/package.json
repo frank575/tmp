@@ -1,13 +1,13 @@
 {
-  "name": "@575/react-common-lib",
+  "name": "@yoimu/react-common-lib",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "frank575",
+  "author": "wcw850710",
   "license": "ISC",
   "dependencies": {
-    "@575/common-lib": "workspace:^0.0.0",
+    "@yoimu/common-lib": "workspace:^0.0.0",
     "mitt": "^3.0.0",
     "react": "^17.0.2",
     "use-context-selector": "^1.3.9"

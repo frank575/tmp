@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { createProvider } from './create-provider'
-import { findNestedDynamicObj } from '@575/common-lib'
+import { findNestedDynamicObj } from '@yoimu/common-lib'
 
 const translate = (messages, nestedKey, replaceArrayStr = []) => {
 	let v = findNestedDynamicObj(messages, nestedKey)

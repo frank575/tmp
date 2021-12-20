@@ -1,5 +1,5 @@
 import { getStorageItem, useUpdateStorage } from './helper'
-import { useSafeState } from '@575/react-common-lib'
+import { useSafeState } from '@yoimu/react-common-lib'
 
 export const useLocalStorageState = (key, initialValue) => {
 	const [state, setState] = useSafeState(

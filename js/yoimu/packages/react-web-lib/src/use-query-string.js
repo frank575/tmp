@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
-import { useSafeState } from '@575/react-common-lib'
+import { useSafeState } from '@yoimu/react-common-lib'
 
 const getValue = (search, param) => new URLSearchParams(search).get(param)
 
