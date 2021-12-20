@@ -75,10 +75,10 @@ importers:
       '@types/node': ^17.0.0
       '@types/react': ^17.0.37
       '@vitejs/plugin-react': ^1.0.9
-      '@yoimu/common-lib': ^0.0.0
-      '@yoimu/react-common-lib': ^0.0.0
-      '@yoimu/react-web-lib': ^0.0.0
-      '@yoimu/web-lib': ^0.0.0
+      '@yoimu/common-lib': ^0.0.1
+      '@yoimu/react-common-lib': ^0.0.1
+      '@yoimu/react-web-lib': ^0.0.1
+      '@yoimu/web-lib': ^0.0.1
       antd: ^4.16.6
       autoprefixer: ^10.2.6
       axios: ^0.21.1
@@ -100,10 +100,10 @@ importers:
       vite-plugin-react-svg: ^0.2.0
     dependencies:
       '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
-      '@yoimu/common-lib': 0.0.0
-      '@yoimu/react-common-lib': 0.0.0_fb465d97788324cae4c9769704948c62
-      '@yoimu/react-web-lib': 0.0.0_6a5a528ade0b3532ba02530ae266f6a0
-      '@yoimu/web-lib': 0.0.0
+      '@yoimu/common-lib': link:../../common-lib
+      '@yoimu/react-common-lib': link:../../react-common-lib
+      '@yoimu/react-web-lib': link:../../react-web-lib
+      '@yoimu/web-lib': link:../../web-lib
       antd: 4.17.3_react-dom@17.0.2+react@17.0.2
       axios: 0.21.4
       mitt: 3.0.0
@@ -1882,41 +1882,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /@yoimu/common-lib/0.0.0:
-    resolution: {integrity: sha512-6SQY/M+PvwTY+KRaxwfCAfXVTHGXFA3KgCM1QEeea/21dG6BKiYa/vX/yfT915JDWO379LIw/7Rse4y399RSBg==}
-    dependencies:
-      moment: 2.29.1
-    dev: false
-
-  /@yoimu/react-common-lib/0.0.0_fb465d97788324cae4c9769704948c62:
-    resolution: {integrity: sha512-Tt7h+14R7Mv96b3uHMp0b4uN+hKFZN7+mXBrFeQYInQj9eIh6d7l4IuYqQZvgR/JQ+/p1RXKU2AGnKC+faaSTA==}
-    dependencies:
-      '@yoimu/common-lib': 0.0.0
-      mitt: 3.0.0
-      react: 17.0.2
-      use-context-selector: 1.3.9_6f8d07b17e194de65f44b8a51b94fb6d
-    transitivePeerDependencies:
-      - react-dom
-      - react-native
-      - scheduler
-    dev: false
-
-  /@yoimu/react-web-lib/0.0.0_6a5a528ade0b3532ba02530ae266f6a0:
-    resolution: {integrity: sha512-1wHbzHW5gAjepbNB+m5pSASfpHeNljgxFI9LvQfxX1P07icvqfhcTVotiSWyr2cfc3lRq6x5fbv7qk4j3LhY8Q==}
-    dependencies:
-      '@yoimu/react-common-lib': 0.0.0_fb465d97788324cae4c9769704948c62
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      react-router-dom: 6.2.1_react-dom@17.0.2+react@17.0.2
-    transitivePeerDependencies:
-      - react-native
-      - scheduler
-    dev: false
-
-  /@yoimu/web-lib/0.0.0:
-    resolution: {integrity: sha512-JB2rz4dGQqa9v0CMlCfvwUGdigb+GPYDslHGKlHUFZS8HCSx1FKB4AaCls/3zAJytUJUmjgsYOQ9/9RBAH6lfQ==}
-    dev: false
 
   /abort-controller/3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
