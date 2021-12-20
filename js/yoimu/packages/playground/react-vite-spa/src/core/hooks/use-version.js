@@ -1,6 +1,6 @@
-import { createProvider } from '75l-react'
 import { useCallback, useEffect, useState } from 'react'
 import axios from 'axios'
+import { createProvider } from '@yoimu/react-common-lib'
 
 const useService = () => {
 	const [version, setVersion] = useState(

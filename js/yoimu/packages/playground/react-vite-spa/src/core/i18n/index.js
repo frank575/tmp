@@ -1,7 +1,7 @@
-import { createI18n } from '75l-react'
 import zh_TW from '@/core/i18n/zh_TW.json'
 import zh_CN from '@/core/i18n/zh_CN.json'
 import { ELocale } from '@/enums/e-locale'
+import { createI18n } from '@yoimu/react-common-lib'
 
 const storageKey = `${import.meta.env.VITE_PROJECT_NAME}_language`
 const storageLocale = localStorage.getItem(storageKey)

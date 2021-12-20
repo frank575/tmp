@@ -1,3 +1,3 @@
-import { createMitt } from '75l-react'
+import { createMitt } from '@yoimu/react-common-lib'
 
 export const { useMitt } = createMitt()

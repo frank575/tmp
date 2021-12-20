@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { createProvider } from '75l-react'
+import { createProvider } from '@yoimu/react-common-lib'
 
 const service = () => {
 	const location = useLocation()

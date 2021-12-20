@@ -1,6 +1,6 @@
 import { useCallback, useEffect } from 'react'
-import { useSafeState } from '75l-react'
 import { EAuthCode, useAuth } from '@/core/hooks/use-auth'
+import { useSafeState } from '@yoimu/react-common-lib'
 
 export const useValidateAuth = () => {
 	const { auth, token, setAuth, clearAuthState } = useAuth(e => ({

@@ -1,5 +1,5 @@
-import { createClassName } from '75l'
 import { useMemo } from 'react'
+import { createClassName } from '@yoimu/web-lib'
 
 export const ContentWrapper = ({ className: pclassName, children }) => {
 	const className = useMemo(

@@ -1,10 +1,11 @@
 import { useCallback, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { useLocalStorageState, createProvider } from '75l-react'
-import { createEnum } from '75l'
 import { useMitt } from '@/core/hooks/use-mitt'
 import { AUTHORIZATION_FAILED } from '@/core/mitt-type'
 import { ERoleLevel } from '@/enums/e-role-type'
+import { createEnum } from '@yoimu/common-lib'
+import { createProvider } from '@yoimu/react-common-lib'
+import { useLocalStorageState } from '@yoimu/react-web-lib'
 
 export const EAuthCode = createEnum({
 	validating: [0, '驗證中'],

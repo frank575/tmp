@@ -1,4 +1,4 @@
-import { createBreakpoints } from '75l-react'
+import { createBreakpoints } from '@yoimu/react-web-lib'
 
 export { useBreakpoints, breakScreens }
 

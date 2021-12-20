@@ -1,4 +1,4 @@
-import { createEnum } from '75l'
+import { createEnum } from '@yoimu/common-lib'
 
 const SUPER_USER = 'SUPER_USER'
 const NORMAL_USER = 'NORMAL_USER'

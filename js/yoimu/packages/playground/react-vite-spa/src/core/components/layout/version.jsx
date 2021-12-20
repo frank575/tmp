@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
-import { createClassName } from '75l'
 import { useVersion } from '@/core/hooks/use-version'
+import { createClassName } from '@yoimu/web-lib'
 
 export const Version = ({ className: pclassName }) => {
 	const className = useMemo(

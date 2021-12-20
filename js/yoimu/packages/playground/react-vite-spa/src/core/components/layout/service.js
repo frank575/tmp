@@ -1,4 +1,5 @@
-import { createProvider, useLocalStorageState, useSafeState } from '75l-react'
+import { useLocalStorageState } from '@yoimu/react-web-lib'
+import { createProvider, useSafeState } from '@yoimu/react-common-lib'
 
 const service = () => {
 	const [menuCollapsed, setMenuCollapsed] = useLocalStorageState(

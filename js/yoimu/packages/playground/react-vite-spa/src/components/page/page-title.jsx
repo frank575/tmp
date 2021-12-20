@@ -1,7 +1,7 @@
 import { Link, useHistory } from 'react-router-dom'
 import { Breadcrumb, Typography } from 'antd'
 import { ArrowLeftOutlined, HomeOutlined } from '@ant-design/icons'
-import { createClassName } from '75l'
+import { createClassName } from '@yoimu/web-lib'
 
 const { Item } = Breadcrumb
 export const PageTitle = ({

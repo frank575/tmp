@@ -1,4 +1,4 @@
-import { createEnum } from '75l'
+import { createEnum } from '@yoimu/common-lib'
 
 export const ELocale = createEnum({
 	zh_TW: ['zh_TW', '繁體中文'],
