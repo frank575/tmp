@@ -1,29 +1,27 @@
 import { Dispatch, SetStateAction } from 'react'
 
-declare module '@yoimu/react-web-lib' {
-	export function useLocalStorageState<T>(
-		key: string,
-		initialValue: T,
-	): [T, Dispatch<SetStateAction<T>>]
+export function useLocalStorageState<T>(
+	key: string,
+	initialValue: T,
+): [T, Dispatch<SetStateAction<T>>]
 
-	export function useSessionStorageState<T>(
-		key: string,
-		initialValue: T,
-	): [T, Dispatch<SetStateAction<T>>]
+export function useSessionStorageState<T>(
+	key: string,
+	initialValue: T,
+): [T, Dispatch<SetStateAction<T>>]
 
-	export function createBreakpoints<T extends object, K extends keyof T>(
-		screens: T,
-	): {
-		useBreakpoints: (
-			range: K | number,
-			callback: (is: boolean) => void,
-			opts?: { boostrap?: boolean; delay?: number },
-		) => void
-	}
-
-	export function useQueryString<T extends object>(
-		initialState: T,
-	): [T, Dispatch<SetStateAction<T>>]
-
-	export function useTitle(title: string, restoreOnUnmount?: boolean): string
+export function createBreakpoints<T extends object, K extends keyof T>(
+	screens: T,
+): {
+	useBreakpoints: (
+		range: K | number,
+		callback: (is: boolean) => void,
+		opts?: { boostrap?: boolean; delay?: number },
+	) => void
 }
+
+export function useQueryString<T extends object>(
+	initialState: T,
+): [T, Dispatch<SetStateAction<T>>]
+
+export function useTitle(title: string, restoreOnUnmount?: boolean): string

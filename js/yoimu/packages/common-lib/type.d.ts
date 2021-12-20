@@ -41,103 +41,101 @@ type DeepValue<
 		: string | number
 	: DeepValue<T, KS>
 
-declare module '@yoimu/common-lib' {
-	export function timeout(): {
-		start: (callback: () => void, delay?: number) => void
-		startSync: (callback: Promise<void>, delay?: number) => void
-		stop: () => void
-	}
-
-	export function interval(): {
-		start: (callback: () => void, delay?: number) => void
-		stop: () => void
-	}
-
-	export function aniFrame(): {
-		start: (callback: () => void) => void
-		stop: () => void
-	}
-
-	type ValueOf<T> = T[keyof T]
-	type EnumValue = boolean | string | number
-	type CreateEnumObject = {
-		[key: string]: EnumValue | EnumValue[]
-	}
-	type EnumValues<T> = ValueOf<{
-		[K in keyof T]: T[K]
-	}>
-	type KeyValueEnumObject<T> = {
-		[K in keyof T]: T[K] extends object
-			? T[K] extends any[]
-				? T[K][1]
-				: T[K]
-			: T[K]
-	}
-	export function createEnum<
-		T extends CreateEnumObject,
-		T2 extends KeyValueEnumObject<T>,
-	>(
-		obj: T,
-	): T2 & {
-		t: (val: EnumValues<T2>) => EnumValue
-		key: (val: EnumValues<T2>) => string
-		keys: keyof T2
-		map: (
-			callback: (value: EnumValue, key: string, index: number) => void,
-		) => void | keyof T2
-		reduce: <T>(
-			callback: (
-				previousValue: T,
-				value: EnumValue,
-				key: string,
-				index: number,
-			) => void,
-			initialValue: T,
-		) => T
-	}
-
-	export function declareEnum<T extends object, V = any>(
-		obj: T,
-		typeBindValue: V,
-	): { [K in keyof T]: V } & {
-		t: { [K in keyof T]: string | undefined }
-		d: { [K in keyof T]: any }
-		keys: string[]
-		length: number
-		map: (callback: (value: V, key: keyof T, index: number) => any) => void
-	}
-
-	export function stepPrice(price: string | number, step?: number): string
-
-	export function toSimple(text: string): string
-
-	export function toTraditional(text: string): string
-
-	export function checkSameChinese(text1: string, text2: string): boolean
-
-	export function checkIncludeText(text1: string, keyword: string): boolean
-
-	export namespace mtime {
-		export function today(): [Moment, Moment]
-
-		export function yesterday(): [Moment, Moment]
-
-		export function thisWeek(): [Moment, Moment]
-
-		export function pastWeek(): [Moment, Moment]
-
-		export function thisMonth(): [Moment, Moment]
-
-		export function pastMonth(): [Moment, Moment]
-	}
-
-	export function generateId(length?: number): string
-
-	export function mergeWords(...conditionTextArr: any[]): string
-
-	export function findNestedDynamicObj<
-		T extends object,
-		K extends Join<Paths<T, 5>, ''>,
-		KS extends Split<K, '.'>,
-	>(obj: T, key: K): DeepValue<T, KS>
+export function timeout(): {
+	start: (callback: () => void, delay?: number) => void
+	startSync: (callback: Promise<void>, delay?: number) => void
+	stop: () => void
 }
+
+export function interval(): {
+	start: (callback: () => void, delay?: number) => void
+	stop: () => void
+}
+
+export function aniFrame(): {
+	start: (callback: () => void) => void
+	stop: () => void
+}
+
+type ValueOf<T> = T[keyof T]
+type EnumValue = boolean | string | number
+type CreateEnumObject = {
+	[key: string]: EnumValue | EnumValue[]
+}
+type EnumValues<T> = ValueOf<{
+	[K in keyof T]: T[K]
+}>
+type KeyValueEnumObject<T> = {
+	[K in keyof T]: T[K] extends object
+		? T[K] extends any[]
+			? T[K][1]
+			: T[K]
+		: T[K]
+}
+export function createEnum<
+	T extends CreateEnumObject,
+	T2 extends KeyValueEnumObject<T>,
+>(
+	obj: T,
+): T2 & {
+	t: (val: EnumValues<T2>) => EnumValue
+	key: (val: EnumValues<T2>) => string
+	keys: keyof T2
+	map: (
+		callback: (value: EnumValue, key: string, index: number) => void,
+	) => void | keyof T2
+	reduce: <T>(
+		callback: (
+			previousValue: T,
+			value: EnumValue,
+			key: string,
+			index: number,
+		) => void,
+		initialValue: T,
+	) => T
+}
+
+export function declareEnum<T extends object, V = any>(
+	obj: T,
+	typeBindValue: V,
+): { [K in keyof T]: V } & {
+	t: { [K in keyof T]: string | undefined }
+	d: { [K in keyof T]: any }
+	keys: string[]
+	length: number
+	map: (callback: (value: V, key: keyof T, index: number) => any) => void
+}
+
+export function stepPrice(price: string | number, step?: number): string
+
+export function toSimple(text: string): string
+
+export function toTraditional(text: string): string
+
+export function checkSameChinese(text1: string, text2: string): boolean
+
+export function checkIncludeText(text1: string, keyword: string): boolean
+
+export namespace mtime {
+	export function today(): [Moment, Moment]
+
+	export function yesterday(): [Moment, Moment]
+
+	export function thisWeek(): [Moment, Moment]
+
+	export function pastWeek(): [Moment, Moment]
+
+	export function thisMonth(): [Moment, Moment]
+
+	export function pastMonth(): [Moment, Moment]
+}
+
+export function generateId(length?: number): string
+
+export function mergeWords(...conditionTextArr: any[]): string
+
+export function findNestedDynamicObj<
+	T extends object,
+	K extends Join<Paths<T, 5>, ''>,
+	KS extends Split<K, '.'>,
+>(obj: T, key: K): DeepValue<T, KS>
