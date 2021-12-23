@@ -1,5 +1,7 @@
 import { Moment } from 'moment'
 
+type key = string | number | symbol
+
 type Prev = [never, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ...0[]]
 
 type Next = [1, 2, 3, 4, 5, 6, 7, 8, 9, ...10[]]
@@ -99,8 +101,8 @@ export function declareEnum<T extends object, V = any>(
 	obj: T,
 	typeBindValue: V,
 ): { [K in keyof T]: V } & {
-	t: { [K in keyof T]: string | undefined }
-	d: { [K in keyof T]: any }
+	t: { [k: key]: string }
+	d: { [k: key]: any }
 	keys: string[]
 	length: number
 	map: (callback: (value: V, key: keyof T, index: number) => any) => void
