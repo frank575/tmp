@@ -28,17 +28,16 @@ export const declareEnum = (obj, typeBindValue) => {
 			const e = obj[k]
 
 			if (Array.isArray(e)) {
-				for (let i = 0; i < e.length; i++) {
+				const first = e[0]
+				v[k] = first
+				for (let i = 1; i < e.length; i++) {
 					const f = e[i]
 					switch (i) {
-						case 0:
-							v[k] = f
-							break
 						case 1:
-							t[k] = f
+							t[first] = f
 							break
 						case 2:
-							d[k] = f
+							d[first] = f
 							break
 					}
 				}
